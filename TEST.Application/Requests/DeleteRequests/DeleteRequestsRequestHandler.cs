@@ -19,7 +19,7 @@ namespace TEST.Application.Requests
 
         protected override async Task Handle(DeleteRequestsRequest request, CancellationToken cancellationToken)
         {
-            var permission = await _applicationDbContext.Permissions.FindAsync(request.Id, cancellationToken);
+            var permission = await _applicationDbContext.Permissions.FindAsync(request.Id);
             _applicationDbContext.Permissions.Remove(permission);
             await _applicationDbContext.SaveChangesAsync(cancellationToken);
         }

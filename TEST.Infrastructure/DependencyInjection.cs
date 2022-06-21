@@ -13,7 +13,7 @@ namespace TEST.Infrastructure
             services
                 .AddDbContext<ApplicationDbContext>(options => options.UseNpgsql(configuration.GetConnectionString("DefaultConnection")));
 
-
+     
             services.AddScoped<IApplicationDbContext>(scope => scope.GetRequiredService<ApplicationDbContext>());
 
 
