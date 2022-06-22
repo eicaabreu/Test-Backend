@@ -13,7 +13,7 @@ namespace TEST.Infrastructure.Database.EntityConfigurations
     {
         public void Configure(EntityTypeBuilder<Permission> builder)
         {
-            builder.ToTable("permissions_");
+            builder.ToTable("permissions");
             builder.HasKey(x => x.Id);
             builder.Property(x => x.Id).HasColumnName("id");
             builder.Property(x => x.Name).HasColumnName("name");

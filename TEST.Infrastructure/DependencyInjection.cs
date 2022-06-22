@@ -11,7 +11,7 @@ namespace TEST.Infrastructure
         public static IServiceCollection RegisterInfrastructure(this IServiceCollection services, IConfiguration configuration)
         {
             services
-                .AddDbContext<ApplicationDbContext>(options => options.UseNpgsql(configuration.GetConnectionString("DefaultConnection")));
+                .AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
 
      
             services.AddScoped<IApplicationDbContext>(scope => scope.GetRequiredService<ApplicationDbContext>());

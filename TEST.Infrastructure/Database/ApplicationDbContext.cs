@@ -16,7 +16,7 @@ namespace TEST.Infrastructure.Database
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-            modelBuilder.HasDefaultSchema("public");
+            //modelBuilder.HasDefaultSchema("public");
             modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
         }
         public DbSet<Permission> Permissions { get; set; }

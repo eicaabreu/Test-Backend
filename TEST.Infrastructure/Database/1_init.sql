@@ -1,11 +1,13 @@
+Create database Test
+
 CREATE TABLE permission_types (
-    id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    id INT IDENTITY PRIMARY KEY,
     description varchar(100) NOT NULL
 );
 
 
-CREATE TABLE permissions_ (
-    id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+CREATE TABLE permissions (
+    id INT IDENTITY PRIMARY KEY,
     name varchar(100) NOT NULL,
     last_name varchar(100) NOT NULL,
     permission_type_id INT NOT NULL,
@@ -19,3 +21,4 @@ INSERT INTO permission_types ( description) VALUES
    ,('Diligencias')
    ,('Otros')
     
+
