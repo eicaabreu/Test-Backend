@@ -6,6 +6,15 @@ namespace TEST.Api.Controllers
 
     public class RequestsController : ApiControllerBase
     {
+
+        [HttpGet]
+        public async Task<IActionResult> GetRequests()
+        {
+            var request = new GetRequestsRequest();
+            var response = await Mediator.Send(request);
+            return Ok(response);
+        }
+
         [HttpPost("paginated")]
         public async Task<IActionResult> GetPaginatedRequests(GetPaginatedRequestsRequest request)
         {
