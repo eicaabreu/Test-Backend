@@ -19,7 +19,7 @@ namespace TEST.Application.Requests
 
         public async Task<IEnumerable<GetRequestsDto>> Handle(GetRequestsRequest request, CancellationToken cancellationToken)
         {
-            var suppliers = await _applicationDbContext.PermissionTypes
+            var permissionTypes = await _applicationDbContext.PermissionTypes
                 .Select(d => new GetRequestsDto
                 {
                     Id = d.Id,
@@ -27,7 +27,7 @@ namespace TEST.Application.Requests
                 })
                 .ToListAsync(cancellationToken);
 
-            return suppliers;
+            return permissionTypes;
         }
     }
 }
