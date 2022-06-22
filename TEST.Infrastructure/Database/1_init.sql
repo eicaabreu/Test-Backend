@@ -4,7 +4,7 @@ CREATE TABLE permission_types (
 );
 
 
-CREATE TABLE permissions (
+CREATE TABLE permissions_ (
     id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
     name varchar(100) NOT NULL,
     last_name varchar(100) NOT NULL,
