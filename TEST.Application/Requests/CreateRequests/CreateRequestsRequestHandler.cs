@@ -4,7 +4,7 @@ using TEST.Domain.ValueObjects;
 
 namespace TEST.Application.Requests
 {
-    internal class CreateRequestsRequestHandler : AsyncRequestHandler<CreateRequestsRequest>
+    public class CreateRequestsRequestHandler : AsyncRequestHandler<CreateRequestsRequest>
     {
         private readonly IApplicationDbContext _applicationDbContext;
         public CreateRequestsRequestHandler(IApplicationDbContext applicationDbContext)

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace TEST.Application.Requests
 {
-    internal class DeleteRequestsRequestHandler : AsyncRequestHandler<DeleteRequestsRequest>
+    public class DeleteRequestsRequestHandler : AsyncRequestHandler<DeleteRequestsRequest>
     {
         private readonly IApplicationDbContext _applicationDbContext;
 

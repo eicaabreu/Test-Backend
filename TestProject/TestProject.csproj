@@ -21,7 +21,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\TEST.Api\TEST.Api.csproj" />
     <ProjectReference Include="..\TEST.Application\TEST.Application.csproj" />
   </ItemGroup>
 

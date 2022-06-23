@@ -5,7 +5,7 @@ using TEST.Domain.ValueObjects;
 
 namespace TEST.Application.Requests
 {
-    internal class UpdateRequestsRequestHandler : AsyncRequestHandler<UpdateRequestsRequest>
+    public class UpdateRequestsRequestHandler : AsyncRequestHandler<UpdateRequestsRequest>
     {
         private readonly IApplicationDbContext _applicationDbContext;
 
