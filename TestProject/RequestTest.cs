@@ -19,8 +19,6 @@ namespace TestProject
           _DeleteRequest = new DeleteRequestsRequestHandler(_applicationDbContext);
           _UpdateRequest = new UpdateRequestsRequestHandler(_applicationDbContext);
 
-
-
         }
         [Fact]
         public void GetVerifyCreateRequestIsNotNull()
