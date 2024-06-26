@@ -9,5 +9,5 @@ namespace TEST.Api.Controllers
     {
         private IMediator _mediator = null!;
         protected IMediator Mediator => _mediator ??= HttpContext.RequestServices.GetRequiredService<IMediator>();
-    
+    }
 }
